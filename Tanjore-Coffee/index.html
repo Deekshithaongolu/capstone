@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TANJORE DEGREE COFFEE</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (Include Popper.js for Bootstrap 5) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-text">
+            <img src="./assets/logo.png" alt="" class="logo">
+            <span class="text">Tanjore Degree Coffee</span>
+        </div>
+
+        <div class="dropdown">
+            <i class="fas fa-bars dropbtn"></i>
+            <div class="dropdown-content">
+                <a href="#home" class="menu-btn">Home</a>
+                <a href="#about" class="menu-btn">About</a>
+                <a href="#best" class="menu-btn">Best</a>
+                <a href="#gallery" class="menu-btn">Gallery</a>
+                <a href="#clients" class="menu-btn">Testimonials</a>
+                <a href="#contact" class="menu-btn">Contact</a>
+            </div>      
+        </div>
+    </nav>
+    <section class="home" id="home">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="assets/banner1.png" class="d-block w-100" alt="First slide">
+                </div>
+                <div class="carousel-item active">
+                    <img src="./assets/banner2.png" class="d-block w-100" alt="Second slide">
+                </div> 
+                <div class="carousel-item">
+                    <img src="./assets/banner3.png" class="d-block w-100" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/banner4.jpg" class="d-block w-100" alt="Third slide">
+                 </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+          
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section> 
+    
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-left">
+                <h3>Spend time</h3>
+                <h3>enjoying coffee.</h3>
+                <p>www.tanjorecoffee.com</p>
+            </div>
+            <div class="about-right">
+                <img src="./assets/ani1(1).png" alt="">
+                <img src="./assets/gallery5.png" alt="">
+            </div>
+        </div>
+        <h4>Welcome to Tanjore</h4>
+        <p>In January 22, 2013, Shri C.Saminathan, with over 35 years of experience in FMCG Industry, laid the foundation for his Coffee Decoction venture under the brand name of 'TANJORE Degree Coffee'. </p> 
+    </section>
+    
+   <section class="best" id="best">
+        <h4>Our Best</h4>
+        <div class="best-content">
+            <div class="best-left">
+                <img src="./assets/quality.png" alt="">
+                <div class="best-left-content">
+                    <p id="head">Authenticity</p>
+                    <p>Our commitment to preserving the authentic taste and aroma of South Indian filter coffee sets us apart from the rest. 
+                    <span id="more-text" style="display: none;">With Tanjore Degree Coffee, you can enjoy the true essence of this beloved beverage in the comfort of your own home.
+                    </span><button id="read-more-btn" onclick="toggleReadMore()">Read More</button></p>
+                    
+                </div>    
+            </div>
+            <div class="best-right">
+                <img src="./assets/quality2.png" alt="">
+                <div class="best-right-content">
+                    <p id="head">Quality</p>
+                    <p>At Tanjore Degree Coffee, we uphold uncompromising standards to deliver a superior coffee experience. From carefully selected beans to meticulous brewing techniques, 
+                    <span id="more-content" style="display: none;">we ensure that every cup meets our stringent quality benchmarks. Experience excellence with every sip of Tanjore Degree Coffee.</span>
+                    <button id="read-more" onclick="toggleMore()">Read More</button></p>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h3>Gallery</h3>
+        <div class="images">
+            <img src="./assets/gallery1.jpg" alt="">
+            <img src="./assets/gallery2.jpg" alt="">
+            <img src="./assets/gallery3.jpg" alt="">
+            <img src="./assets/gallery5.png" alt="">
+            <img src="./assets/gallery4.jpg" alt="">
+            <img src="./assets/gallery6.png" alt="">
+        </div>
+    </section> 
+
+    <section class="testimonials" id="clients">
+        <h3>Client Testimonials</h3>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner" id="testimonal">
+                <div class="carousel-item active">
+                    <div class="client-one">
+                        <i class="fas fa-quote-right"></i>
+                        <p>Priya</p>
+                        <p>I've been a fan of Jayam rose milk &amp; coffee for years, and their decoction maker has truly been a game-changer for me. As someone who values both authenticity and convenience, I am able to brew authentic South Indian filter coffee at home.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="client-one">
+                        <i class="fas fa-quote-right"></i>
+                        <p>Rajesh</p>
+                        <p>Indulging in rose milk and filter coffee at this quaint cafe was an absolute delight.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo" id="contact">
+            <img src="./assets/logo.png" alt="">
+            <p>Tanjore Degree Coffee</p>
+        </div>
+        <div class="footer-foot">
+            <div class="footer-address">
+                <p style="font-size: 16px; padding-bottom: 1rem;" id="contact">Contact Details</p>
+                <p><i class="fa fa-envelope"></i> &nbsp; &nbsp; tanjoredegreecoffee@yahoo.in</p>
+                <p><i class="fa fa-phone" style="transform: rotate(90deg);"></i>&nbsp; &nbsp; +919003106755</p>
+                <p><i class="fa fa-map-pin"></i>&nbsp; &nbsp; &nbsp; 364, 37th street TVS Avenue, <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Anna Nagar West Extn., <br>&nbsp; &nbsp; &nbsp; &nbsp; Chennai - 600101.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <div class="inline-fields">
+                    <input type="text" placeholder="Name">
+                    <input type="number" placeholder="Mobile Number">
+                </div>
+                <input type="email" placeholder="Email Id">
+                <textarea name="" placeholder="Enter the details you want to convey. You can use upto 300 characters."></textarea>
+                <div class="submit">
+                    <i class="fa fa-paperclip"></i>
+                    <button>Submit</button>
+                </div>
+            </div>
+        </div> 
+    </footer>  
+
+    <script src="script.js"></script>
+</body>
+</html>
